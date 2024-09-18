@@ -38,8 +38,7 @@ You can experiment with this feature by replacing the provided photos with ones 
 1. Download zip
 2. Unpack zip
 3. store folder somewhere special, like documents
-4. Goto browser settings, then extensions, then load unpacked and choose the folder
-- Alternativly use this in URL space chrome://extensions
+4. Goto browser settings, then extensions, then load unpacked and choose the folder. Alternativly use chrome://extensions in URL space.
 6. Extension will be activated
 
 ---
