@@ -1,0 +1,10 @@
+{
+  "manifest_version": 4,
+  "name": "Wallpaper",
+  "version": "4.0",
+  "description": "Displays a clock, wallpaper, and searchbar",
+  "permissions": ["activeTab", "clipboardWrite"],
+  "chrome_url_overrides": {
+    "newtab": "Pages/newtab.html"
+  }
+}

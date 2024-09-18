@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../CSS/schedule.css">
+  <link rel="icon" href="../Pictures/gr.ico" type="gr.ico">
+  <title>Schedule</title>
+  <style>
+    th:nth-child(1){
+      width: 10%;
+    }
+    th:nth-child(2){
+      width: 10%;
+    } 
+    th:nth-child(3) {
+      width: 10%;
+    }
+    th:nth-child(4) {
+      width: 70%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top left button -->
+  <button id="topLeftButton" class="newtab-button top-left">Go to New Tab</button>
+
+  <!-- Top right buttons -->
+  <div class="top-right-buttons">
+    <button id="topRightButton1" class="newtab-button top-right">Go to Unicode</button>
+    <button id="topRightButton2" class="newtab-button top-right">Go to Photos</button>
+  </div>
+  
+  <button id="modifyAll">Modify</button>
+  <button id="downloadCSV">Download CSV</button>
+  <button id="importCsvBtn">Import CSV</button>
+  <input type="file" id="csvFile" style="display:none">
+  
+  <!-- Rest of your HTML -->
+  <table id="scheduleTable">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Activity</th>
+      </tr>
+    </thead>
+    <tbody id="scheduleBody">
+      <!-- Rows will be added here dynamically -->
+    </tbody>
+  </table>
+  <button id="addRow">Add New Row</button>
+</body>
+<script src="../JavaScript/schedule.js"></script>
+</html>

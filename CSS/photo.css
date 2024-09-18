@@ -1,0 +1,85 @@
+body {
+
+    background-image: url('zakynthos-greece-mountains-blue-ocean-beach-island.jpg');
+    background-size: cover;
+    background-repeat: repeat-y; /* Repeat vertically on the y-axis */
+    background-position: center;
+    background-attachment: fixed; /* Optional: Keep the background fixed */
+    margin: 0;
+    padding: 0;
+    /*background-color: #0d5eaf;*/
+    
+  }
+/* Top bar */
+.top-bar {
+    background-color: #296096;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button {
+    background-color: #0d5eaf;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .button:hover{
+    background-color: #360daf;     
+  }
+  .left-button {
+    margin-left: 10px;
+  }
+  
+  .right-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .middle-button {
+    /* Style as needed */
+  }
+  
+  .right-button {
+    margin-right: 10px;
+  }
+  .grid-container {
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr); /* Assuming 4 columns, adjust as needed */
+    grid-auto-rows: minmax(200px, auto); /* Assuming a minimum row height of 200px */
+    gap: 16px;
+    width: 100%;
+    margin-top: 20px; /* Add margin at the top to create a gap */
+
+  }
+  
+  .grid-item {
+    
+    background-color: #F3F5F8;
+    border: 3px solid #360daf;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 10px; 
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* CSS for enlarged images */
+  .grid-item.enlarged {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  
+  

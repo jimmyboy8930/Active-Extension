@@ -1,0 +1,151 @@
+body {
+    background-image: url('../Pictures/background5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .clock-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .round-edge-button {
+    width: 200px;
+    border-radius: 12px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #0d5eaf;
+    color: #ffffff; 
+    border-radius: 15px;
+    margin-left: 19px;
+    outline-color: #0d5eaf;
+  }
+  .round-edge-button:hover{
+    background-color: #360daf; 
+  }
+  .button-container {
+    margin-top: 70px;  /* Adjust this to create space between the search box and buttons */
+    display: flex;
+    flex-direction: column;
+    outline-color: #0d5eaf;
+    align-items: flex-start;  /* Align the buttons to the start (left) */
+  }
+  
+  
+  
+  .clock {
+    width: 300px;
+    font-size: 52px;
+    text-align: center;
+    color: #0d5eaf;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    line-height: 52px; /* To make it same height as the search bar */
+  }
+  
+  .search-wrapper {
+    position: absolute;
+    top: 30px;  /* Aligned vertically with the clock */
+    /*left: 50%;*/
+    left: 20px;
+    /*transform: translateX(-50%);*/
+    z-index: 2;
+  }
+
+  .two-links {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 100vh;           /* Full viewport height */
+    
+  }
+  .GYM {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    
+  }
+  .search-box {
+    width: 390px;
+    padding: 10px;
+    background-color: #0d5eaf;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid #0d5eaf;  /* Border set to blue */
+    outline-color: #0d5eaf;
+  
+    /* Changing the placeholder text color */
+    color: #ffffff; /* default text color */
+  }
+  
+  /* CSS to change placeholder color */
+  .search-box::placeholder {
+    color: #ffffff;  /* Placeholder text color changed */
+  }
+  #label-topmost, #label-upper, #label-bottom {
+    position: absolute;
+    font-size: 0px;  /* Adjust as needed */
+    color: #0d5eaf;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #button-wrapper, #button-wrapper-upper, #button-wrapper-topmost {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: no-wrap;
+    gap: 10px;
+    justify-content: center;
+    color: #ffffff;
+  }
+
+  .bottom-button:hover{
+    background-color: #360daf;
+  }
+  #button-wrapper-upper {
+    bottom: 60px;
+  }
+  
+  #button-wrapper-topmost {
+    bottom: 100px;
+  }
+  
+  
+  #label-topmost {
+    bottom: 110px;  /* Adjust these positions */
+  }
+  
+  #label-upper {
+    bottom: 70px;  /* Adjust these positions */
+  }
+  
+  #label-bottom {
+    bottom: 35px;  /* Adjust these positions */
+  }
+  
+  
+  .bottom-button {
+    width: 130px; /* Fixed width */
+    height: 30px;
+    outline: none;
+    outline-color: #0d5eaf;
+    background-color: #0d5eaf;
+    border: none;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  

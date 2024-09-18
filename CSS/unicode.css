@@ -1,0 +1,173 @@
+/* Add a background color to the body */
+body{
+    background-image: url('../Pictures/brave-wallpaper2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Center the content horizontally */
+.content-wrapper {
+    width: 45%;
+    
+    
+}
+/*
+::selection {
+    background-color: transparent;} /* Makes it so you cannot copy Or set to default background color */
+  
+/* Style for headers */
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 64px;  /* Set the text size to 14 pixels */
+    color: #360daf;
+    margin-bottom: 10px; /* Reduce bottom margin */
+}
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;  /* Set the text size to 14 pixels */
+    color: #ffffff;
+    margin-top: 0px; /* Reduce top margin */
+}
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;  /* Set the text size to 14 pixels */
+    color: #ffffff;
+    margin-top: 0px; /* Reduce top margin */
+}
+
+/* Style for paragraphs */
+p{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p2{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.copy-btn {
+    font-size: 20px;  /* Make it smaller */
+    background-color: #0d5eaf;  /* White background */
+    color: #ffffff;  /* Black text */
+    border: 2px solid #0d5eaf;  /* Green Border color */
+    border-radius: 12px;  /* Rounded edges */
+    padding: 1px 1px;  /* Padding to make it a bit larger */
+    cursor: pointer;  /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, color 0.3s;  /* Smooth transition for background and color */
+  }
+  
+.copy-btn:hover {
+    background-color: #360daf;  /* Green background on hover */
+    color: #ffffff;  /* White text on hover */
+}
+.copy-btn-clicked {
+    background-color: #ffffff !important; /* Green background when clicked */
+    color: #0d5eaf !important;  /* Text color when clicked */
+}
+
+/* New CSS for 3-column layout */
+.columns {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: .8; /* Adjust this value to your need, smaller values will make the columns narrower */
+    min-width: 50px; /* You can adjust this as needed */
+    padding: 20px;
+}
+/* CSS for the conversion box */
+.conversion-box {
+    padding: 1px;
+    min-width: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.conversion-box input,
+.conversion-box span,
+.conversion-box button {
+    display: inline-block;
+    vertical-align: middle;  /* Align the middle of the elements */
+    margin-right: 10px;  /* Add some spacing between the elements */
+}
+/* Existing styles for input[type="text"] */
+input[type="text"] {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #0d5eaf;
+    background-color: #0d5eaf;
+    border-radius: 3px;
+    color: #ffffff;
+    outline: none;
+    text-align: center;
+}
+/* Default styles for Subscript and Superscript buttons */
+#copySubscript, #copySuperscript, #copyGreekLetter {
+    background-color: #0d5eaf;  /* Default background color */
+    color: #ffffff;  /* Default text color */
+    border-radius: 6px;  /* Rounded edges */
+    cursor: pointer;  /* Hand icon on hover */
+    border: 2px solid #0d5eaf;  /* Green Border color */
+    transition: background-color 0.3s ease, color 0.3s ease;  /* Transition effects */
+}
+/* Hover effects for Subscript and Superscript buttons */
+#copySubscript:hover, #copySuperscript:hover, #copyGreekLetter:hover {
+    background-color: #360daf;  /* Background color on hover */
+    color: #ffffff;  /* Text color on hover */
+}
+
+/* Change placeholder text color */
+input[type="text"]::placeholder {
+    color: #ffffff;  /* Placeholder text color from your palette */
+    border: 1px solid #0d5eaf;
+    outline: none;
+}
+
+/* Change text highlight color */
+input[type="text"]::selection {
+    background: #0d5eaf;  /* Background color of the selection from your palette */
+    color: #ffffff;  /* Text color of the selection from your palette */
+    border: 1px solid #0d5eaf;
+    outline: none;
+}
+.newtab-button {
+    background-color: #0d5eaf;  /* Green background */
+    color: #ffffff;  /* White text */
+    padding: 14px 20px;  /* Padding */
+    margin: 8px 0;  /* Margin */
+    cursor: pointer;  /* Cursor style */
+    width: auto;  /* Auto width */
+    text-align: center;  /* Center the text */
+    border: none;  /* No border */
+    border-radius: 4px;  /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s;  /* Transition for hover effect */
+
+  }
+  .newtab-button:hover {
+    background-color: #360daf;  /* Darker green on hover */
+  }
+  .top-left {
+    position: fixed;  /* Fixed position */
+    top: 0;  /* Zero distance from the top */
+    left: 5px;  /* Zero distance from the left */
+  }
+  
+  .top-right {
+    position: fixed;  /* Fixed position */
+    top: 0;  /* Zero distance from the top */
+    right: 130px;  /* Zero distance from the right */
+  }
+  .top-right2 {
+    position: fixed;  /* Fixed position */
+    top: 0;  /* Zero distance from the top */
+    right: 5px;  /* Zero distance from the right */
+  }
